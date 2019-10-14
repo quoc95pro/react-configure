@@ -1,0 +1,8 @@
+@for $i from 1 to 30 {
+    $suffix: $i * 100;
+    $time: $i / 10;
+
+    .animate.duration-#{$suffix} {
+        animation-duration: #{$time}s;
+    }
+}
