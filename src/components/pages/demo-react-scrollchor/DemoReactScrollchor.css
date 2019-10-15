@@ -1,0 +1,27 @@
+.DemoReactScrollchor {
+  width: 100%;
+  padding: 15px 10px;
+  border: #0073b7 2px solid;
+  position: relative;
+  padding-top: 40px; }
+  .DemoReactScrollchor nav {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%; }
+    .DemoReactScrollchor nav img {
+      border-radius: 6px;
+      width: 35px;
+      height: 35px;
+      object-fit: cover; }
+  .DemoReactScrollchor .app-section {
+    width: 100%;
+    padding: 20px 10px;
+    margin-top: 30px; }
+    .DemoReactScrollchor .app-section.footer {
+      padding: 12px;
+      background-color: #FF851B; }
+      .DemoReactScrollchor .app-section.footer a {
+        color: white !important;
+        font-size: 1.2rem; }

@@ -27,10 +27,119 @@ class DemoReactReveal extends Component {
                             <Fade
                                 key={o.id}
                                 left={i % 4 === 0}
-                                
-                            ></Fade>
-                        )
-                    }
+                                right={i % 4 === 1}
+                                top={i % 4 === 2}
+                                bottom={i % 4 == 3}
+                                duration={1200}
+                            >
+                                <p>{o.text}</p>
+                            </Fade>
+                        );
+                    } else if (i < step * 2) {
+                        return (
+                          <Rotate
+                            key={o.id}
+                            left={i % 4 === 0}
+                            right={i % 4 === 1}
+                            top={i % 4 === 2}
+                            bottom={i % 4 === 3}
+                            duration={1200}
+                          >
+                            <p>{o.text}</p>
+                          </Rotate>
+                        );
+                      } else if (i < step * 3) {
+                        return (
+                          <Fade
+                            key={o.id}
+                            left={i % 4 === 0}
+                            right={i % 4 === 1}
+                            top={i % 4 === 2}
+                            bottom={i % 4 === 3}
+                            duration={1200}
+                          >
+                            <p>{o.text}</p>
+                          </Fade>
+                        );
+                      } else if (i < step * 4) {
+                        return (
+                          <Zoom
+                            key={o.id}
+                            left={i % 4 === 0}
+                            right={i % 4 === 1}
+                            top={i % 4 === 2}
+                            bottom={i % 4 === 3}
+                            duration={1200}
+                          >
+                            <p>{o.text}</p>
+                          </Zoom>
+                        );
+                      } else if (i < step * 5) {
+                        return (
+                          <Bounce
+                            key={o.id}
+                            left={i % 4 === 0}
+                            right={i % 4 === 1}
+                            top={i % 4 === 2}
+                            bottom={i % 4 === 3}
+                            duration={1200}
+                          >
+                            <p>{o.text}</p>
+                          </Bounce>
+                        );
+                      } else if (i < step * 6) {
+                        return (
+                          <Slide
+                            key={o.id}
+                            left={i % 4 === 0}
+                            right={i % 4 === 1}
+                            top={i % 4 === 2}
+                            bottom={i % 4 === 3}
+                            duration={1200}
+                          >
+                            <p>{o.text}</p>
+                          </Slide>
+                        );
+                      } else if (i < step * 7) {
+                        return (
+                          <Roll
+                            key={o.id}
+                            left={i % 4 === 0}
+                            right={i % 4 === 1}
+                            top={i % 4 === 2}
+                            bottom={i % 4 === 3}
+                            duration={1200}
+                          >
+                            <p>{o.text}</p>
+                          </Roll>
+                        );
+                      } else if (i < step * 8) {
+                        return (
+                          <Flip
+                            key={o.id}
+                            left={i % 4 === 0}
+                            right={i % 4 === 1}
+                            top={i % 4 === 2}
+                            bottom={i % 4 === 3}
+                            duration={1200}
+                          >
+                            <p>{o.text}</p>
+                          </Flip>
+                        );
+                      } else {
+                        return (
+                          <LightSpeed
+                            key={o.id}
+                            left={i % 4 === 0}
+                            right={i % 4 === 1}
+                            top={i % 4 === 2}
+                            bottom={i % 4 === 3}
+                            duration={1200}
+                          >
+                            <p>{o.text}</p>
+                          </LightSpeed>
+                        );
+                      }
                 })
                     
                 }

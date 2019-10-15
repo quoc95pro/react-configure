@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import $ from jQuery;
+import $ from 'jquery';
 import ('./DemoJquery.css');
 
 class DemoJquery extends Component {
